@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  height: 73px;
+  border-radius: 6px;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0%;
+  color: #576067;
+}
+
+span {
+  color: #6c3eb8;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 18px;
+}
+
+.icons {
+  fill: rgb(87, 96, 103);
+  transition-duration: 200ms;
+  &:hover {
+    fill: #6c3eb8;
+  }
+}
