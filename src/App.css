@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   width: 1280px;
   margin: 0 auto;
 }
@@ -37,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 20px;
 }

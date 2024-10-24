@@ -16,17 +16,20 @@ const Footer = () => {
         Develop by <span>Lytvynchuk Illa</span>
       </div>
       <div className={css.wrapper}>
-        <a href="https://t.me/Necrotic_999">
+        <a href="https://t.me/Necrotic_999" target="_blank">
           <svg width="22" height="22" className={css.icons}>
             <use xlinkHref={`${icons}#icon-telegram`} />
           </svg>
         </a>
-        <a href="https://www.instagram.com/_lit.va/">
+        <a href="https://www.instagram.com/_lit.va/" target="_blank">
           <svg width="22" height="22" className={css.icons}>
             <use xlinkHref={`${icons}#icon-instagram`} />
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/illia-lytvynchuk-30312b303/">
+        <a
+          href="https://www.linkedin.com/in/illia-lytvynchuk-30312b303/"
+          target="_blank"
+        >
           <svg width="22" height="22" className={css.icons}>
             <use xlinkHref={`${icons}#icon-linkedin`} />
           </svg>
