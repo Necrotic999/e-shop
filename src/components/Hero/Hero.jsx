@@ -11,7 +11,7 @@ const Hero = () => {
           <p className={css.text}>The best seller of 2022</p>
           <h1 className={css.title}>LENNON r2d2 with NVIDIA 5090 TI</h1>
           <button className={css.btn} type="button">
-            Shop now
+            Shop Now
           </button>
         </div>
         <img src={computer} alt="computer" className={css.hero_img} />
