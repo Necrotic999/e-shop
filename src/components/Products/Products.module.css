@@ -25,23 +25,28 @@
   width: 230px;
   border-radius: 8px;
   background-color: rgb(33, 33, 35);
+  transition-duration: 200ms;
 }
 
-/* .link {
-  height: 100%;
-} */
+.product_item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 7px 7px rgb(108, 62, 184);
+}
 
 .image {
   width: 230px;
   min-height: 110px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .wrapper {
   padding: 12px 12px 8px;
   display: flex;
   flex-direction: column;
+  min-height: 128px;
 }
 
 .product_title {

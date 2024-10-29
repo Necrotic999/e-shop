@@ -10,10 +10,14 @@ import { getProducts } from "./redux/products/operations";
 import Products from "./components/Products/Products";
 import { selectProducts } from "./redux/products/productsSlice";
 import { useSelector } from "react-redux";
+import Categories from "./components/Categories/Categories";
+import { selectCategories } from "./redux/categories/categoriesSlice";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   const dispatch = useDispatch();
   const products = useSelector(selectProducts);
+  const categories = useSelector(selectCategories);
 
   useEffect(() => {
     dispatch(getCategories());
@@ -28,6 +32,8 @@ function App() {
         <AppRoutes />
       </div>
       <Products products={products} amount={5} title="Trending" />
+      <Categories categories={categories} amount={5} title="Worth seeing" />
+      <Banner />
 
       <Footer />
     </div>
