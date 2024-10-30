@@ -3,7 +3,7 @@ import { getProducts } from "./operations";
 
 const initialState = {
   products: [],
-  //   filtered: [],
+  filtered: [],
   //   related: [],
   isLoading: false,
 };
@@ -13,6 +13,7 @@ const slice = createSlice({
   initialState: initialState,
   selectors: {
     selectProducts: (state) => state.products,
+    selectFilteredProducts: (state) => state.filtered,
   },
   extraReducers: (builder) => {
     builder
@@ -21,6 +22,9 @@ const slice = createSlice({
       })
       .addCase(getProducts.fulfilled, (state, { payload }) => {
         state.products = payload;
+        state.filtered = payload.filter(
+          (filteredProduct) => filteredProduct.price < 100
+        );
         state.isLoading = false;
       })
       .addCase(getProducts.rejected, (state) => {
@@ -30,4 +34,4 @@ const slice = createSlice({
 });
 
 export const productsReducer = slice.reducer;
-export const { selectProducts } = slice.selectors;
+export const { selectProducts, selectFilteredProducts } = slice.selectors;
