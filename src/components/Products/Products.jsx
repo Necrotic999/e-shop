@@ -12,7 +12,7 @@ const Products = ({ title, style = {}, products = [], amount }) => {
       <ul className={css.product_list}>
         {productList.map((product) => (
           <li key={product.id} className={css.product_item}>
-            <Link to={`/products/:${product.id}`} className={css.link}>
+            <Link to={`/products/${product.id}`} className={css.link}>
               <img
                 src={product.images[0]}
                 alt="product"
